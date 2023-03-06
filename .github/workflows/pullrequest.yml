@@ -1,4 +1,4 @@
-name: core-api CI with Java and Node
+name: core-api pr verification
 
 on:
   pull_request:
