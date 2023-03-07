@@ -1,0 +1,8 @@
+name: coreapi-app
+services:
+  - name: coreapi-app-service
+    image:
+      registry: travistrle
+      registry_type: DOCKER_HUB
+      repository: core-api
+      tag: ${DOCKER_IMAGE_TAG}
