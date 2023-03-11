@@ -1,4 +1,5 @@
 name: coreapi-app
+region: nyc
 services:
   - name: coreapi-app-service
     image:
@@ -6,3 +7,7 @@ services:
       registry_type: DOCKER_HUB
       repository: core-api
       tag: IMAGE_TAG_PLACE_HOLDER
+    instance_count: 1
+    instance_size_slug: basic-xs
+    routes:
+      - path: /
