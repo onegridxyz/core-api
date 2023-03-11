@@ -279,6 +279,9 @@ dependencies {
     testRuntimeOnly "com.tngtech.archunit:archunit-junit5-engine:${archunitJunit5Version}"
     testImplementation "com.h2database:h2"
     developmentOnly "org.springframework.boot:spring-boot-devtools:${springBootVersion}"
+    implementation "org.springdoc:springdoc-openapi-webmvc-core:${springDocVersion}"
+    implementation "org.springdoc:springdoc-openapi-ui:${springDocVersion}"
+    runtimeOnly "org.springdoc:springdoc-openapi-kotlin:${springDocVersion}"
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
 }
 
