@@ -37,8 +37,7 @@ description = ""
 
 sourceCompatibility=17
 targetCompatibility=17
-assert System.properties["java.specification.version"] == "11" || "12" || "13" || "14" || "15" || "16" || "17" || "18"
-
+assert System.properties["java.specification.version"] == "17" || "18"
 apply from: "gradle/docker.gradle"
 apply from: "gradle/sonar.gradle"
 apply from: "gradle/swagger.gradle"
