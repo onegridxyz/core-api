@@ -7,9 +7,6 @@ on:
 permissions:
   contents: read
 
-env:
-  CORE_API_APP_ID: b2312905-b0ec-485d-8a50-0a4563dd387c
-
 jobs:
   build:
 
@@ -55,4 +52,4 @@ jobs:
       - name: Print infra/do-app-spec.yml
         run: cat infra/do-app-spec.yml
       - name: Update core-api spec
-        run: doctl apps update ${{ env.CORE_API_APP_ID }} --spec infra/do-app-spec.yml
+        run: doctl apps list | grep coreapi-app | awk '{print $1}' | xargs doctl apps update $1 --spec infra/do-app-spec.yml
