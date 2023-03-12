@@ -57,7 +57,7 @@ jobs:
       - name: Set image tag
         run: echo "IMAGE_TAG=${{ steps.branch-name.outputs.current_branch }}-${{ steps.commit-hash.outputs.short }}" >> $GITHUB_ENV
       - name: Build and Publish Docker Image
-        run: ./gradlew bootJar jib -Pprod -Djib.to.image=${{ secrets.DOCKERHUB_USERNAME }}/core-api:${{ env.IMAGE_TAG }}
+        run: ./gradlew bootJar jib -Pprod -Papi-docs -Djib.to.image=${{ secrets.DOCKERHUB_USERNAME }}/core-api:${{ env.IMAGE_TAG }}
       - name: Download coreapi-app spec
         run: doctl apps list | grep coreapi-app | awk '{print $1}' | xargs doctl apps spec get $1 --format json > infra/do-app-spec-input.json
       - name: Replace latest image
