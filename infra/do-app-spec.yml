@@ -1,9 +1,0 @@
-name: coreapi-app
-region: nyc
-services:
-  - name: coreapi-app-service
-    image:
-      registry: travistrle
-      registry_type: DOCKER_HUB
-      repository: core-api
-      tag: IMAGE_TAG_PLACE_HOLDER
