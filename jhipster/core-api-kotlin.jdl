@@ -15,5 +15,6 @@ application {
     enableTranslation false
     nativeLanguage en
     clientFramework react
+    blueprints [kotlin]
   }
 }
