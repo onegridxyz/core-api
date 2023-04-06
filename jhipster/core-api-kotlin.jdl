@@ -1,0 +1,20 @@
+
+application {
+  config {
+    baseName coreApi,
+    applicationType monolith,
+    packageName xyz.onegrid.coreapi,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    devDatabaseType postgresql,
+    serverPort 8080,
+    buildTool gradle,
+    cacheProvider caffeine
+    enableHibernateCache false
+    enableSwaggerCodegen true
+    enableTranslation false
+    nativeLanguage en
+    clientFramework react
+    blueprints [kotlin]
+  }
+}

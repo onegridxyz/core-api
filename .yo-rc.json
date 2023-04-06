@@ -4,19 +4,14 @@
     "applicationType": "monolith",
     "authenticationType": "jwt",
     "baseName": "coreApi",
-    "blueprints": [
-      {
-        "name": "generator-jhipster-kotlin",
-        "version": "1.15.0"
-      }
-    ],
+    "blueprints": [],
     "buildTool": "gradle",
     "cacheProvider": "caffeine",
     "clientFramework": "react",
     "clientPackageManager": "npm",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "creationTimestamp": 1680364226266,
+    "creationTimestamp": 1680743482112,
     "databaseType": "sql",
     "devDatabaseType": "postgresql",
     "devServerPort": 9060,
@@ -29,17 +24,12 @@
     "entitySuffix": "",
     "gradleEnterpriseHost": "",
     "jhiPrefix": "jhi",
-    "jhipsterVersion": "7.8.1",
-    "jwtSecretKey": "MTgyMzFkNWYxMjY1MTk2MjlkNTUwN2RjODdmNTMwZDIzNDdiZDQ1ODllY2QzMDdiZjAzY2NkYWZiZjA3MTc5OTZiOTZiMTRlODQ0ODExODUzYzljNDdkMjY3OWUxNGIyODQ5NDkyZjBkMjU4NjUwYTZlYzg2Y2ExMjUxYTEyNzY=",
+    "jhipsterVersion": "7.9.3",
+    "jwtSecretKey": "ZmJhZDQ2ZDBiNWY4YjA4NTIzNDJmMjgyZWQ2ZWI0MjMzMzFhYTc5ODA3Mzg4MGNlZDJmMmY4NTUxMWI1OWFkODE2ZmFmZTI4YjJjYTk2NTRhZmY5M2YwYjZiMmFhMTZlNWU0OWNmNTI5MTI0NDFkODAyNTBmZmFlYTYwNDFmNzE=",
     "languages": [],
     "messageBroker": false,
     "nativeLanguage": "en",
-    "otherModules": [
-      {
-        "name": "generator-jhipster-kotlin",
-        "version": "1.15.0"
-      }
-    ],
+    "otherModules": [],
     "packageFolder": "xyz/onegrid/coreapi",
     "packageName": "xyz.onegrid.coreapi",
     "pages": [],
@@ -49,6 +39,7 @@
     "serverPort": "8080",
     "serviceDiscoveryType": false,
     "skipCheckLengthOfIdentifier": false,
+    "skipClient": false,
     "skipFakeData": false,
     "skipUserManagement": false,
     "testFrameworks": [],

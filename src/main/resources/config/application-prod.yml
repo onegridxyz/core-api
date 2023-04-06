@@ -57,7 +57,7 @@ spring:
 # keytool -genkey -alias coreapi -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
 #
 # You can also use Let's Encrypt:
-# https://maximilian-boehm.com/hp2121/Create-a-Java-Keystore-JKS-from-Let-s-Encrypt-Certificates.htm
+# See details in topic "Create a Java Keystore (.JKS) from Let's Encrypt Certificates" on https://maximilian-boehm.com/en-gb/blog
 #
 # Then, modify the server.ssl properties so your "server" configuration looks like:
 #
@@ -101,7 +101,7 @@ jhipster:
         # - In the JHipster Registry (which includes a Spring Cloud Config server)
         # - In a separate `application-prod.yml` file, in the same folder as your executable JAR file
         # - In the `JHIPSTER_SECURITY_AUTHENTICATION_JWT_BASE64_SECRET` environment variable
-        base64-secret: MTgyMzFkNWYxMjY1MTk2MjlkNTUwN2RjODdmNTMwZDIzNDdiZDQ1ODllY2QzMDdiZjAzY2NkYWZiZjA3MTc5OTZiOTZiMTRlODQ0ODExODUzYzljNDdkMjY3OWUxNGIyODQ5NDkyZjBkMjU4NjUwYTZlYzg2Y2ExMjUxYTEyNzY=
+        base64-secret: ZmJhZDQ2ZDBiNWY4YjA4NTIzNDJmMjgyZWQ2ZWI0MjMzMzFhYTc5ODA3Mzg4MGNlZDJmMmY4NTUxMWI1OWFkODE2ZmFmZTI4YjJjYTk2NTRhZmY5M2YwYjZiMmFhMTZlNWU0OWNmNTI5MTI0NDFkODAyNTBmZmFlYTYwNDFmNzE=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
