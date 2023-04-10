@@ -18,6 +18,7 @@ logging:
     ROOT: INFO
     tech.jhipster: INFO
     xyz.onegrid.coreapi: INFO
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
 
 management:
   metrics:
