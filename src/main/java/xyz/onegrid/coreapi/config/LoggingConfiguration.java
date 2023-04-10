@@ -9,7 +9,9 @@ import java.util.HashMap;
 import java.util.Map;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.filter.CommonsRequestLoggingFilter;
 import tech.jhipster.config.JHipsterProperties;
 
 /*
@@ -43,5 +45,15 @@ public class LoggingConfiguration {
         if (loggingProperties.isUseJsonFormat() || logstashProperties.isEnabled()) {
             addContextListener(context, customFields, loggingProperties);
         }
+    }
+
+    @Bean
+    public CommonsRequestLoggingFilter requestLoggingFilter() {
+        CommonsRequestLoggingFilter requestLoggingFilter = new CommonsRequestLoggingFilter();
+        requestLoggingFilter.setIncludeClientInfo(true);
+        requestLoggingFilter.setIncludeHeaders(true);
+        requestLoggingFilter.setIncludeQueryString(true);
+        requestLoggingFilter.setIncludePayload(true);
+        return requestLoggingFilter;
     }
 }
