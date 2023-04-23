@@ -1,7 +1,10 @@
 package xyz.onegrid.coreapi.web.rest.publicapi.controller;
 
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -48,7 +51,7 @@ public class CategoryController {
     }
 
     @GetMapping("/categories")
-    public Map<Long, Category> getAllCategories() {
-        return categoryDataStore;
+    public List<Category> getAllCategories() {
+        return categoryDataStore.values().stream().sorted(Comparator.comparing(Category::getId)).collect(Collectors.toList());
     }
 }
